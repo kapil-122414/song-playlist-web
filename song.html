@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="song.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div  class="card">
+    <div class="borderd">
+    <ul  id="playlist" class="iteam">
+        <li id="list" data-src="song/chin-tapak-dum-dum-funny-notification-63364-63374.mp3"><img src="b.6.jpg"/>song 1</li>
+        <li id="list" data-src="song/main-yahan-tu-waha-63369.mp3"><img src="b.6.jpg"/>song 2</li>
+        <li id="list" data-src="song/nicky-jam-j-balvin-d0590aee-ef17-4a78-aa57-dfea90c9ac64-63377.mp3"><img src="b.6.jpg"/>song 3</li>
+        <li id="list" data-src="song/o-shera-uth-zara-63368.mp3"><img src="b.6.jpg"/>song 4</li>
+    </ul>
+   
+    <div class="progress">
+        <div class="staus"> </div>
+    </div>
+    <div class="btn">
+        <button onclick="prives()"><i class="fa-solid fa-backward"></i></button>
+        <button id="playbtn" class="hide" onclick="playtrack()" ><i class="fa-solid fa-play-pause"></i><i class="fa-solid fa-play"></i></button>
+        <button id="pausebtn" onclick="playtrack()"> <i class="fa-regular fa-pause"></i></i></button>
+        <button onclick="nexttrack()"><i class="fa-duotone fa-solid fa-forward"></i></button>
+    </div>
+
+<div class="volume">
+    <i class="fa-solid fa-volume-high"></i>
+    <input type="range" class="vol"  />
+    
+</div>
+   </div>
+</div>
+   <script src="song.js"></script>
+</body>
+</html>
